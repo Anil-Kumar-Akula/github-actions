@@ -1,0 +1,23 @@
+name: Hello World Pipeline
+
+# 🔹 EVENT (when pipeline runs)
+on: 
+  push   # triggers when code is pushed
+
+# 🔹 JOBS (group of tasks)
+jobs:
+  hello-job:   # job name
+
+    # 🔹 RUNNER (machine where job runs)
+    runs-on: ubuntu-latest
+
+    # 🔹 STEPS (actions/commands inside job)
+    steps:
+
+      # 🔹 ACTION (pre-built action from GitHub)
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 🔹 COMMAND (your custom command)
+      - name: Print Hello World
+        run: echo "Hello, World!"
