@@ -1,0 +1,10 @@
+name: demo
+on: push
+env:
+  NAME: Anil
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print variable
+        run: echo "I am $NAME"
