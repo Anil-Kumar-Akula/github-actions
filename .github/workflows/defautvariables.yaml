@@ -1,0 +1,10 @@
+name: default-variable
+on: push
+jobs:
+  test:
+   runs-on: ubuntu-latest
+   steps:
+     - name: print default variables
+       run: echo "This repo name is $GITHUB_REPOSITORY"
+     
+  
