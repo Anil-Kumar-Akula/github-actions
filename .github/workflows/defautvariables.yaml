@@ -4,7 +4,10 @@ jobs:
   test:
    runs-on: ubuntu-latest
    steps:
-     - name: print default variables
+     - name: print Repo name
        run: echo "This repo name is $GITHUB_REPOSITORY"
+
+     - name: workflow name
+       run: echo "This workflow name is $GITHUB_WORKFLOW"
      
   
