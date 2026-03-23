@@ -2,7 +2,7 @@ name: default-variable
 on: push
 jobs:
   test:
-   runs-on: ubuntu-latest
+   runs-on: self-hosted
    steps:
      - name: print Repo name
        run: echo "This repo name is $GITHUB_REPOSITORY"
