@@ -9,7 +9,7 @@ jobs:
   hello-job:   # job name
 
     # 🔹 RUNNER (machine where job runs)
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     # 🔹 STEPS (actions/commands inside job)
     steps:
